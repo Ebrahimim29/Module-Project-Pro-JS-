@@ -41,12 +41,21 @@ section[id^="slider"]{
 }
 
 /* کارت محصولات */
+.products-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 auto; 
+}
+
 .product-card{
-    background: #f5f5f5;
+    background: #a5a5a5;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.7);
     padding: 15px;
-    width: 200px;    
+    width: 200px; 
+    height: 100px;   
     text-align: center;
     transition: 0.3s;
     cursor: pointer;

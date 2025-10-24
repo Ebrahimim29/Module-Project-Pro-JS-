@@ -9,3 +9,4 @@ export function createProductCard(product) { //product==Object
     `;
     return card;
 }
+
