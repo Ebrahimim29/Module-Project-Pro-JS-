@@ -1,6 +1,6 @@
-// slider.js
-export function createAutoSlider(containerId, images, interval = 3000) {
+export function createAutoSlider(containerId, images, interval=3000) {
   const container = document.getElementById(containerId);
+
   let current = 0;
 
   function showSlide(index) {
@@ -14,8 +14,8 @@ export function createAutoSlider(containerId, images, interval = 3000) {
   // نمایش اولین تصویر
   showSlide(current);
 
-  // تغییر تصویر با فاصله زمانی مشخص
-  setInterval(() => {
+  //تغییر تصویر با فاصله زمانی مشخص
+  setInterval(()=>{
     current = (current + 1) % images.length;
     showSlide(current);
   }, interval);
